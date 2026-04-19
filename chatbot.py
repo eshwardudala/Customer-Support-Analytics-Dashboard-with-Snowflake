@@ -9,9 +9,8 @@ def get_snowflake_connection():
     account= ACCOUNT,
     warehouse='COMPUTE_WH',
     database='FINANCE_AI',
-    schema='CORE'
-)
-    return conn
+    schema='CORE')
+   return conn
 
 
 class CustomerSupportChatbot:
