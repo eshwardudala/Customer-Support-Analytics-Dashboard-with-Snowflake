@@ -1,13 +1,13 @@
 import snowflake.connector
 import pandas as pd
 
-API_KEY = "D2SY9ZC818J5DSND"
+
 
 # Snowflake connection
 conn = snowflake.connector.connect(
-    user='ESHWARDUDALA0',
-    password='Telangana@5617',
-    account='HZCTIQT-PRC84963',
+    user= USER,
+    password=PASSWORD,
+    account= Account,
     warehouse='COMPUTE_WH',
     database='FINANCE_AI',
     schema='CORE'
