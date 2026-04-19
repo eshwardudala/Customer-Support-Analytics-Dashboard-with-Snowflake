@@ -7,7 +7,7 @@ import pandas as pd
 conn = snowflake.connector.connect(
     user= USER,
     password=PASSWORD,
-    account= Account,
+    account= ACCOUNT,
     warehouse='COMPUTE_WH',
     database='FINANCE_AI',
     schema='CORE'
