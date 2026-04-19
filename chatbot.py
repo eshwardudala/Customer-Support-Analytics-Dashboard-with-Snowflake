@@ -2,8 +2,7 @@ import snowflake.connector
 import pandas as pd
 import os
 
-load_dotenv()  # loads .env file
-# Snowflake connection
+
 
 def get_snowflake_connection():
     conn = snowflake.connector.connect(
