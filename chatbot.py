@@ -1,12 +1,14 @@
 import snowflake.connector
 import pandas as pd
+import os
 
+load_dotenv()  # loads .env file
 # Snowflake connection
 
 def get_snowflake_connection():
     conn = snowflake.connector.connect(
-        user='ESHWARDUDALA0',
-        password=PASSWORD,
+        user=os.getenv("USER"),
+        password=os.getenv("PASSWORD"),
         account='HZCTIQT-PRC84963',
         warehouse='COMPUTE_WH',
         database='FINANCE_AI',
