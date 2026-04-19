@@ -7,7 +7,7 @@ def get_snowflake_connection():
     conn = snowflake.connector.connect(
     user= USER,
     password=PASSWORD,
-    account= Account,
+    account= ACCOUNT,
     warehouse='COMPUTE_WH',
     database='FINANCE_AI',
     schema='CORE'
