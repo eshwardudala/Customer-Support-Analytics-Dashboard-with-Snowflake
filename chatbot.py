@@ -2,19 +2,10 @@ import snowflake.connector
 import pandas as pd
 
 # Snowflake connection
-'''def get_snowflake_connection():
-   conn = snowflake.connector.connect(
-    user= 'ESHWARDUDALA0',
-    password=PASSWORD,
-    account= ACCOUNT,
-    warehouse='COMPUTE_WH',
-    database='FINANCE_AI',
-    schema='CORE')
-   return conn
-   '''
+
 def get_snowflake_connection():
     conn = snowflake.connector.connect(
-    user= USER,
+    user= USER_,
     password=PASSWORD,
     account= ACCOUNT,
     warehouse='COMPUTE_WH',
