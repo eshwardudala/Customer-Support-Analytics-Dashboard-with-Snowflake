@@ -12,7 +12,16 @@ import pandas as pd
     schema='CORE')
    return conn
    '''
-from analytics import get_snowflake_connection
+def get_snowflake_connection():
+    conn = snowflake.connector.connect(
+    user= USER,
+    password=PASSWORD,
+    account= ACCOUNT,
+    warehouse='COMPUTE_WH',
+    database='FINANCE_AI',
+    schema='CORE'
+)
+    return conn
 
 
 class CustomerSupportChatbot:
