@@ -2,7 +2,7 @@ import snowflake.connector
 import pandas as pd
 
 # Snowflake connection
-def get_snowflake_connection():
+'''def get_snowflake_connection():
    conn = snowflake.connector.connect(
     user= 'ESHWARDUDALA0',
     password=PASSWORD,
@@ -11,6 +11,8 @@ def get_snowflake_connection():
     database='FINANCE_AI',
     schema='CORE')
    return conn
+   '''
+from analytics import get_snowflake_connection
 
 
 class CustomerSupportChatbot:
