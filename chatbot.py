@@ -7,8 +7,8 @@ load_dotenv()  # loads .env file
 
 def get_snowflake_connection():
     conn = snowflake.connector.connect(
-        user=os.getenv("USER"),
-        password=os.getenv("PASSWORD"),
+        user='ESHWARDUDALA0',
+        password=PASSWORD,
         account='HZCTIQT-PRC84963',
         warehouse='COMPUTE_WH',
         database='FINANCE_AI',
