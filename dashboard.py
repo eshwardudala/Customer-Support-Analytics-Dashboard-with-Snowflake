@@ -577,21 +577,7 @@ try:
         ]
         
         # Organize questions in rows of 2
-        col1, col2 = st.columns(2)
-        
-        if col1.button("⭐ Agent Mentorship Potential", use_container_width=True):
-            with st.spinner("🤔 Analyzing..."):
-                response = st.session_state.chatbot.ask_question(quick_questions[0])
-                st.session_state.chat_history.append({'role': 'user', 'content': quick_questions[0]})
-                st.session_state.chat_history.append({'role': 'assistant', 'content': response})
-            st.rerun()
-        
-        if col2.button("🏆 High Satisfaction Patterns", use_container_width=True):
-            with st.spinner("🤔 Analyzing..."):
-                response = st.session_state.chatbot.ask_question(quick_questions[1])
-                st.session_state.chat_history.append({'role': 'user', 'content': quick_questions[1]})
-                st.session_state.chat_history.append({'role': 'assistant', 'content': response})
-            st.rerun()
+       
         
         col1, col2 = st.columns(2)
         
